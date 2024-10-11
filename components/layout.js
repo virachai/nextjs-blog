@@ -4,6 +4,21 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
+// import '@/app/ui/global.css';
+// import { inter } from '@/styles/ui/fonts';
+
+// export default function RootLayout({
+//   children,
+// }: {
+//   children: React.ReactNode;
+// }) {
+//   return (
+//     <html lang="en">
+//       <body className={`${inter.className} antialiased`}>{children}</body>
+//     </html>
+//   );
+// }
+
 const name = "TOY++";
 export const siteTitle = "Next.js Sample Website";
 
@@ -41,7 +56,6 @@ export default function Layout({ children, home }) {
         ) : (
           <>
             <Link href="/">
-
               <Image
                 priority
                 src="/images/profile.jpg"
@@ -50,7 +64,6 @@ export default function Layout({ children, home }) {
                 width={108}
                 alt={name}
               />
-
             </Link>
             <h2 className={utilStyles.headingLg}>
               <Link href="/" className={utilStyles.colorInherit}>
@@ -63,9 +76,7 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">
-            ← Back to home
-          </Link>
+          <Link href="/">← Back to home</Link>
         </div>
       )}
     </div>
