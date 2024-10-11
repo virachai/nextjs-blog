@@ -4,6 +4,7 @@ import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
+import { inter } from "@/app/ui/fonts";
 /*
 - https://github.com/vercel/next-learn
 - https://next-seo-starter.vercel.app/
@@ -20,18 +21,20 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      <section className={`${utilStyles.headingMd}`}>
         <p>
-          Hello, I’m <strong>Shu</strong>. I’m a software engineer and a
-          translator (English/Japanese). You can contact me on{" "}
-          <a href="https://twitter.com/chibicode">Twitter</a>.
+          Hello, I’m <strong>Virachai</strong>. I’m a software engineer and a
+          blogger. You can contact me on{" "}
+          <a href="https://twitter.com/wvirachai">Twitter</a>.
         </p>
         <p>
           (This is a sample website - you’ll be building a site like this in{" "}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <section
+        className={`hidden ${utilStyles.headingMd} ${utilStyles.padding1px}`}
+      >
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (

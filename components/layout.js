@@ -3,28 +3,14 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import { inter } from "@/app/ui/fonts";
 
-// import '@/app/ui/global.css';
-// import { inter } from '@/styles/ui/fonts';
-
-// export default function RootLayout({
-//   children,
-// }: {
-//   children: React.ReactNode;
-// }) {
-//   return (
-//     <html lang="en">
-//       <body className={`${inter.className} antialiased`}>{children}</body>
-//     </html>
-//   );
-// }
-
-const name = "TOY++ with TypeScript";
-export const siteTitle = "Next.js Sample Website";
+const name = "Toy Plus Plus";
+export const siteTitle = "Toy Plus Plus Website";
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${inter.className} antialiased`}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -43,15 +29,7 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <span class="material-symbols-outlined">home</span>
           </>
         ) : (
           <>
@@ -76,7 +54,9 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">← Back to home</Link>
+          <Link href="/">
+            ← Back to <span class="material-symbols-outlined">home</span>
+          </Link>
         </div>
       )}
     </div>
