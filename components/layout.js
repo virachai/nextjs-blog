@@ -19,7 +19,7 @@ import Link from "next/link";
 //   );
 // }
 
-const name = "TOY++";
+const name = "TOY++ with TypeScript: JavaScript With Syntax For Types.";
 export const siteTitle = "Next.js Sample Website";
 
 export default function Layout({ children, home }) {
