@@ -588,8 +588,45 @@ video {
   }
 }
 
+.collapse {
+  visibility: collapse;
+}
+
+.flex {
+  display: flex;
+}
+
 .hidden {
   display: none;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html,
@@ -618,4 +655,24 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+}
+
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:w-3\/5 {
+    width: 60%;
+  }
+
+  .md\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }

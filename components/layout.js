@@ -1,9 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
+import utilStyles from "@/styles/utils.module.css";
 import Link from "next/link";
 import { inter } from "@/app/ui/fonts";
+import TopNavBar from "@/components/layout/TopNavbar/TopNavbar";
 
 const name = "Toy Plus Plus";
 export const siteTitle = "Toy Plus Plus Website";
@@ -26,10 +27,10 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header className={`${styles.header} p-0`}>
         {home ? (
           <>
-            <span class="material-symbols-outlined">home</span>
+            <TopNavBar />
           </>
         ) : (
           <>

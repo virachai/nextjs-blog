@@ -4,10 +4,14 @@ import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
-import { inter } from "@/app/ui/fonts";
+// import { inter } from "@/app/ui/fonts";
+// import TopNavBar from "@/components/TopNavbar/TopNavbar.js";
 /*
 - https://github.com/vercel/next-learn
 - https://next-seo-starter.vercel.app/
+- https://m3.material.io/
+- https://fonts.google.com/icons
+- https://material-foundation.github.io/material-theme-builder/
 
 - https://nextjs.org/learn
 - https://nextjs.org/learn/dashboard-app/css-styling
@@ -15,6 +19,22 @@ import { inter } from "@/app/ui/fonts";
 - https://nextjs.org/learn/dashboard-app/optimizing-fonts-images
   - https://vercel.com/blog/how-core-web-vitals-affect-seo
 */
+
+// pages/_app.js
+
+// import TopNavBar from '../components/NavBar';
+
+// function MyApp({ Component, pageProps }) {
+//   return (
+//     <>
+//       <NavBar />
+//       <Component {...pageProps} />
+//     </>
+//   );
+// }
+
+// export default MyApp;
+
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
