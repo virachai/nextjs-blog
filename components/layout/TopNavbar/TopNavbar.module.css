@@ -1,22 +1,23 @@
 /* TopNavbar.module.css */
-.shape {
-  height: 0;
-  width: 0;
-  border-bottom: 30px solid black;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
+.navs {
+  padding: 0.7rem;
+  @apply w-screen;
+  @apply max-h-[71px];
+  @apply min-h-[71px];
+  @apply z-10;
 }
 
-.container {
-  background-color: #f0f0f0;
-  padding: 20px;
+.nav_mobile {
+  padding: 0;
+  margin: 0;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.test {
-  font-size: unset;
+.nav_checkbox {
+  display: flex;
+  position: absolute;
+  top: 0.75rem;
+  opacity: 0;
+  @apply z-20;
+  @apply h-[44px];
+  @apply w-[62px];
 }

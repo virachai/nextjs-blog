@@ -4,8 +4,6 @@ import utilStyles from "@/styles/utils.module.css";
 import { getSortedPostsData } from "@/lib/posts";
 import Link from "next/link";
 import Date from "@/components/date";
-import "@/styles/global.css";
-import "@/styles/globalicons.css";
 // import { inter } from "@/app/ui/fonts";
 // import TopNavBar from "@/components/TopNavbar/TopNavbar.js";
 /*

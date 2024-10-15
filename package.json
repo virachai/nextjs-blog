@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "tailwindcss -i ./sources/tailwindcss.css -o ./styles/global.css & next dev",
     "build": "next build",
     "start": "next start",
-    "css": "tailwindcss -i ./sources/tailwindcss.css -o ./styles/global.css --watch"
+    "css": "tailwindcss -i ./sources/tailwindcss.css -o ./styles/global.css"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
