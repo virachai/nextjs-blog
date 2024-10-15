@@ -1,7 +1,7 @@
 // import { Metadata } from "next";
 // import { Lexend } from "next/font/google";
-import "../styles/global.css";
-import "../styles/globalicons.css";
+import "@/styles/global.css";
+import "@/styles/globalicons.css";
 
 // https://m3.material.io/foundations/customization
 // https://material-foundation.github.io/material-theme-builder/

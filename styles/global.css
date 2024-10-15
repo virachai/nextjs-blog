@@ -596,10 +596,6 @@ video {
   display: flex;
 }
 
-.hidden {
-  display: none;
-}
-
 .w-screen {
   width: 100vw;
 }
@@ -622,6 +618,11 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .antialiased {
@@ -662,6 +663,10 @@ img {
     display: block;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:w-3\/5 {
     width: 60%;
   }
@@ -669,6 +674,11 @@ img {
   .md\:px-28 {
     padding-left: 7rem;
     padding-right: 7rem;
+  }
+
+  .md\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .md\:py-12 {

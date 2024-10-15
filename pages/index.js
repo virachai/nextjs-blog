@@ -1,9 +1,11 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
-import { getSortedPostsData } from "../lib/posts";
+import Layout, { siteTitle } from "@/components/layout";
+import utilStyles from "@/styles/utils.module.css";
+import { getSortedPostsData } from "@/lib/posts";
 import Link from "next/link";
-import Date from "../components/date";
+import Date from "@/components/date";
+import "@/styles/global.css";
+import "@/styles/globalicons.css";
 // import { inter } from "@/app/ui/fonts";
 // import TopNavBar from "@/components/TopNavbar/TopNavbar.js";
 /*
@@ -53,7 +55,7 @@ export default function Home({ allPostsData }) {
         </p>
       </section>
       <section
-        className={`hidden ${utilStyles.headingMd} ${utilStyles.padding1px}`}
+        className={`${utilStyles.headingMd} ${utilStyles.padding1px} md:hidden`}
       >
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
