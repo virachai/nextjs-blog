@@ -600,12 +600,50 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.flex-none {
+  flex: none;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
 .items-center {
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-blue-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .p-0 {
@@ -616,9 +654,40 @@ video {
   padding: 1.5rem;
 }
 
+.leading-none {
+  line-height: 1;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#navbarIconMenu .material-symbols-outlined {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+#navbarIconMenu > a {
+  display: flex;
+  max-height: 45px;
+  min-height: 45px;
+  min-width: 80px;
+  max-width: 80px;
+  align-items: center;
+  justify-content: center;
+  text-decoration-line: none;
+}
+
+#navbarIconMenu > a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(20 184 166 / var(--tw-text-opacity));
+  text-decoration-line: none;
 }
 
 html,
@@ -653,6 +722,11 @@ input.navbar-toggler:checked + #navbarNav {
   display: flex;
 }
 
+.hover\:bg-blue-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:hidden {
     display: none;
@@ -662,10 +736,6 @@ input.navbar-toggler:checked + #navbarNav {
 @media (min-width: 768px) {
   .md\:block {
     display: block;
-  }
-
-  .md\:hidden {
-    display: none;
   }
 
   .md\:w-3\/5 {
@@ -680,5 +750,11 @@ input.navbar-toggler:checked + #navbarNav {
   .md\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
   }
 }

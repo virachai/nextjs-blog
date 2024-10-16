@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+#navbarIconMenu .material-symbols-outlined {
+  @apply text-3xl;
+}
+#navbarIconMenu > a {
+  @apply flex min-h-[45px] max-h-[45px] min-w-[80px] max-w-[80px] justify-center items-center no-underline hover:text-teal-500  hover:no-underline;
+}
 html,
 body {
   padding: 0;

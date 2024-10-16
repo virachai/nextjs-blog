@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./TopNavbar.module.css";
+// import mainStyles from "@/styles/global.css";
 // https://m2.material.io/develop/web/getting-started
 
 export default function TopNavbar() {
@@ -11,7 +12,7 @@ export default function TopNavbar() {
 
   return (
     <nav className={`${styles.navs} navbar navbar-expand-sm`}>
-      <Link className="navbar-brand p-0" href="/" tabIndex="1">
+      <Link className="navbar-brand p-0 flex-none" href="/" tabIndex="1">
         <svg
           className="d-block"
           width="36"
@@ -30,6 +31,48 @@ export default function TopNavbar() {
           ></path>
         </svg>
       </Link>
+      <div className={`${styles.nav_lg} hidden lg:flex flex-auto justify-end`}>
+        <div className={`${styles.nav_menu}`} id="navbarMenu">
+          <ul className="navbar-nav">
+            <li className="nav-item active">
+              <Link className="nav-link" href="/" tabIndex="3">
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" href="/about" tabIndex="4">
+                About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" href="/toy" tabIndex="5">
+                Toy
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" href="/age" tabIndex="6">
+                Age
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" href="/Contact" tabIndex="7">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="navbarIconMenu" className="flex flex-row justify-end">
+        <Link className="" href="#">
+          <span className="material-symbols-outlined">shopping_cart</span>
+        </Link>
+        <Link
+          href="#"
+          className="leading-none border rounded border-blue-500 bg-blue-500 hover:bg-blue-700 text-white"
+        >
+          <span>Login</span>
+        </Link>
+      </div>
       <div className={`${styles.nav_mobile} sm:hidden`}>
         <button
           className={`navbar-toggler z-10`}
@@ -58,16 +101,26 @@ export default function TopNavbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/features" tabIndex="4">
-                Features
+              <Link className="nav-link" href="/about" tabIndex="4">
+                About
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/pricing" tabIndex="5">
-                Pricing
+              <Link className="nav-link" href="/toy" tabIndex="5">
+                Toy
               </Link>
             </li>
             <li className="nav-item">
+              <Link className="nav-link" href="/age" tabIndex="6">
+                Age
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" href="/Contact" tabIndex="7">
+                Contact
+              </Link>
+            </li>
+            {/* <li className="nav-item">
               <Link
                 className="nav-link disabled"
                 href="#"
@@ -76,7 +129,7 @@ export default function TopNavbar() {
               >
                 Disabled
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

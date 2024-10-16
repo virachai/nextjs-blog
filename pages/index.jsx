@@ -41,7 +41,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={`${utilStyles.headingMd}`}>
+      <section className={`${utilStyles.headingMd} hidden`}>
         <p>
           Hello, I’m <strong>Virachai</strong>. I’m a software engineer and a
           blogger. You can contact me on{" "}
@@ -56,7 +56,7 @@ export default function Home({ allPostsData }) {
         </p>
       </section>
       <section
-        className={`${utilStyles.headingMd} ${utilStyles.padding1px} md:hidden`}
+        className={`${utilStyles.headingMd} ${utilStyles.padding1px} hidden`}
       >
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>

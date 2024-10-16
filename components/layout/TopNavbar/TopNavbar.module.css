@@ -5,13 +5,21 @@
   @apply max-h-[71px];
   @apply min-h-[71px];
   @apply z-10;
+  @apply md:px-3;
+  @apply items-center;
+  @apply justify-between;
+  @apply flex-wrap;
 }
 
-.nav_mobile {
+.nav_mobile,
+.nav_lg {
   padding: 0;
   margin: 0;
 }
 
+.nav_menu {
+  display: unset;
+}
 .nav_checkbox {
   display: flex;
   position: absolute;
