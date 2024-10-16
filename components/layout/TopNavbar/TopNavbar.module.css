@@ -1,7 +1,8 @@
 /* TopNavbar.module.css */
 .navs {
   padding: 0.7rem;
-  @apply w-screen;
+  width: 100%;
+  /* @apply w-screen; */
   @apply max-h-[71px];
   @apply min-h-[71px];
   @apply z-10;
@@ -9,6 +10,7 @@
   @apply items-center;
   @apply justify-between;
   @apply flex-wrap;
+  @apply bg-white border-b border-gray-200;
 }
 
 .nav_mobile,

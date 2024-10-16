@@ -4,9 +4,18 @@
 
 #navbarIconMenu .material-symbols-outlined {
   @apply text-3xl;
+  @apply grayscale;
 }
 #navbarIconMenu > a {
-  @apply flex min-h-[45px] max-h-[45px] min-w-[80px] max-w-[80px] justify-center items-center no-underline hover:text-teal-500  hover:no-underline;
+  @apply flex;
+  @apply min-h-[45px];
+  @apply max-h-[45px];
+  @apply min-w-[80px];
+  @apply max-w-[80px];
+  @apply justify-center;
+  @apply items-center;
+  @apply no-underline;
+  @apply hover:no-underline;
 }
 html,
 body {
@@ -16,6 +25,11 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+}
+
+body {
+  overflow-y: scroll; /* Show scrollbars */
+  overflow-x: hidden; /* Show scrollbars */
 }
 
 * {

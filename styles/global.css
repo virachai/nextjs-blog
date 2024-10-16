@@ -671,22 +671,22 @@ video {
 #navbarIconMenu .material-symbols-outlined {
   font-size: 1.875rem;
   line-height: 2.25rem;
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 #navbarIconMenu > a {
   display: flex;
-  max-height: 45px;
   min-height: 45px;
+  max-height: 45px;
   min-width: 80px;
   max-width: 80px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-decoration-line: none;
 }
 
 #navbarIconMenu > a:hover {
-  --tw-text-opacity: 1;
-  color: rgb(20 184 166 / var(--tw-text-opacity));
   text-decoration-line: none;
 }
 
@@ -698,6 +698,13 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+}
+
+body {
+  overflow-y: scroll;
+  /* Show scrollbars */
+  overflow-x: hidden;
+  /* Show scrollbars */
 }
 
 * {

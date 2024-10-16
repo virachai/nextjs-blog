@@ -1,6 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import utilStyles from "@/styles/utils.module.css";
 import styles from "./TopNavbar.module.css";
 // import mainStyles from "@/styles/global.css";
 // https://m2.material.io/develop/web/getting-started
@@ -13,7 +15,7 @@ export default function TopNavbar() {
   return (
     <nav className={`${styles.navs} navbar navbar-expand-sm`}>
       <Link className="navbar-brand p-0 flex-none" href="/" tabIndex="1">
-        <svg
+        {/* <svg
           className="d-block"
           width="36"
           height="36"
@@ -29,7 +31,8 @@ export default function TopNavbar() {
             fill="currentColor"
             d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"
           ></path>
-        </svg>
+        </svg> */}
+        <Image src="/images/Dino-logo.png" height={41} width={100} />
       </Link>
       <div className={`${styles.nav_lg} hidden lg:flex flex-auto justify-end`}>
         <div className={`${styles.nav_menu}`} id="navbarMenu">
@@ -95,8 +98,8 @@ export default function TopNavbar() {
           id="navbarNav"
         >
           <ul className="navbar-nav">
-            <li className="nav-item active">
-              <Link className="nav-link" href="/" tabIndex="3">
+            <li className="nav-item">
+              <Link className="nav-link active" href="/" tabIndex="3">
                 Home
               </Link>
             </li>
