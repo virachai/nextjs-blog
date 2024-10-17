@@ -4,6 +4,8 @@ import utilStyles from "@/styles/utils.module.css";
 import { getSortedPostsData } from "@/lib/posts";
 import Link from "next/link";
 import Date from "@/components/date";
+import HeroSection from "@/components/layout/HeroSection/HeroSection";
+
 // import { inter } from "@/app/ui/fonts";
 // import TopNavBar from "@/components/TopNavbar/TopNavbar.js";
 /*
@@ -39,8 +41,9 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>{siteTitle} - Home</title>
       </Head>
+      <HeroSection />
       <section className={`${utilStyles.headingMd} hidden`}>
         <p>
           Hello, I’m <strong>Virachai</strong>. I’m a software engineer and a

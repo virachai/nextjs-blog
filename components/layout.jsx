@@ -52,14 +52,15 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-      <main>{children}</main>
-      {!home && (
+      <main className="mt-[71px] min-h-svh">{children}</main>
+      <footer>Footer</footer>
+      {/* {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
             ← Back to <span class="material-symbols-outlined">home</span>
           </Link>
         </div>
-      )}
+      )} */}
     </div>
   );
 }
