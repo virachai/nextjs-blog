@@ -617,6 +617,10 @@ video {
   z-index: 10;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .mb-\[22px\] {
   margin-bottom: 22px;
 }
@@ -663,6 +667,10 @@ video {
 
 .w-\[370px\] {
   width: 370px;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .w-full {
@@ -902,6 +910,10 @@ input.navbar-toggler:checked + #navbarNav {
 }
 
 @media (min-width: 640px) {
+  .sm\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .sm\:inline {
     display: inline;
   }
@@ -913,6 +925,10 @@ input.navbar-toggler:checked + #navbarNav {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
   .md\:block {
     display: block;
   }

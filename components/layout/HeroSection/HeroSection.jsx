@@ -6,7 +6,7 @@ import styles from "./HeroSection.module.css";
 
 export default function HeroSection() {
   return (
-    <section className={`w-full`}>
+    <section className={`w-full mb-16`}>
       <div
         className={`relative overflow-y-hidden max-h-[500px] md:max-h-[620px] lg:max-h-[737px]`}
       >
