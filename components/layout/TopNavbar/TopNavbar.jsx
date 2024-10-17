@@ -13,8 +13,8 @@ export default function TopNavbar() {
   }, []);
 
   return (
-    <nav className={`${styles.navs} navbar navbar-expand-sm`}>
-      <Link className="navbar-brand p-0 flex-none m-0" href="/" tabIndex="1">
+    <nav className={`${styles.navs} navbar navbar-expand-md`}>
+      <Link className={`${styles.nav_logo} navbar-brand`} href="/" tabIndex="1">
         {/* <svg
           className="d-block"
           width="36"
@@ -93,6 +93,9 @@ export default function TopNavbar() {
       </div>
 
       <div id="navbarIconMenu" className="flex flex-row justify-end">
+        {/* <Link className="" href="#">
+          <span className="material-symbols-outlined">Search</span>
+        </Link> */}
         <Link className="" href="#">
           <span className="material-symbols-outlined">shopping_cart</span>
         </Link>

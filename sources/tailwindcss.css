@@ -10,8 +10,8 @@
   @apply flex;
   @apply min-h-[45px];
   @apply max-h-[45px];
-  @apply min-w-[80px];
-  @apply max-w-[80px];
+  @apply min-w-[75px];
+  @apply max-w-[75px];
   @apply justify-center;
   @apply items-center;
   @apply no-underline;
@@ -30,6 +30,7 @@ body {
 body {
   overflow-y: scroll; /* Show scrollbars */
   overflow-x: hidden; /* Show scrollbars */
+  min-width: 370px;
 }
 
 * {
