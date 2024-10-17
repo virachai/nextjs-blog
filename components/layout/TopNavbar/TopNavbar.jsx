@@ -100,7 +100,8 @@ export default function TopNavbar() {
           <span className="material-symbols-outlined">shopping_cart</span>
         </Link>
         <Link
-          href="#"
+          target="_blank"
+          href="https://toyplusplus.vercel.app/"
           className="leading-none border rounded border-blue-500 bg-blue-500 hover:bg-blue-700 text-white"
         >
           <span>Login</span>
