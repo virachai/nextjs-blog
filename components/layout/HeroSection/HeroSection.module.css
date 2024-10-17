@@ -6,8 +6,9 @@
   height: 100%;
   width: 100%;
   background-image: url("https://template.hasthemes.com/kidol/kidol/assets/img/slider/3.jpg");
-  @apply md:min-h-[620px] lg:min-h-[737px];
-  @apply md:max-h-[620px] lg:max-h-[737px];
+  @apply min-h-[500px] md:min-h-[620px] lg:min-h-[737px];
+  @apply max-h-[500px] md:max-h-[620px] lg:max-h-[737px];
+  @apply bg-right md:bg-center;
 }
 
 .slider_content_area {
@@ -15,6 +16,7 @@
   top: 0;
   left: 0;
   right: 0;
+  @apply min-h-[500px];
   @apply md:min-h-[620px];
   @apply lg:min-h-[737px];
   display: flex;
