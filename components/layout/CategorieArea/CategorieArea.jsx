@@ -11,7 +11,7 @@ export default function CategorieArea() {
     "Music",
     "Water Play",
     "Active Play",
-    "Other",
+    "Others",
   ];
 
   list.forEach((element, i) => {
