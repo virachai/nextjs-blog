@@ -1,6 +1,6 @@
 export default function ItemRating({ rating }) {
   const stars = [];
-  for (let i = 0; i < rating; i++) {
+  for (let i = 0; i < Math.ceil(rating); i++) {
     // Use rating prop directly
     stars.push(
       <span key={i} className="icon-star">

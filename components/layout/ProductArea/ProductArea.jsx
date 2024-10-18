@@ -10,7 +10,7 @@ export default function ProductArea() {
       imageUrl: "/images/9.webp",
       title: "Funskool Teddy Brown",
       price: 199.99,
-      rating: 4.5,
+      rating: 3.4,
     },
     {
       imageUrl: "/images/9.webp",
