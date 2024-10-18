@@ -8,7 +8,7 @@ export default function ProductArea() {
   const products = [
     {
       imageUrl: "/images/9.webp",
-      title: "Product 1",
+      title: "Funskool Teddy Brown",
       price: 199.99,
       rating: 4.5,
     },

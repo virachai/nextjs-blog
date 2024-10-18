@@ -34,3 +34,11 @@
 .thumb {
   max-height: unset;
 }
+
+.product_info {
+  @apply text-left;
+  background-color: #e4f6fe;
+  border-radius: 0 0 5px 5px;
+  min-height: 117px;
+  padding: 0 31px 33px;
+}
