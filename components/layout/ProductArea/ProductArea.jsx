@@ -81,7 +81,7 @@ export default function ProductArea() {
   ];
   return (
     <section className={`w-full`}>
-      <div className={`container w-auto text-center`}>
+      <div className={`container w-auto text-center ${styles.container}`}>
         <h2 className={`title text-4xl sm:mb-4 md:mb-6`}>Recommended</h2>
         <div className={`row`}>
           <div className={`col-12 ${styles.item_list}`}>
