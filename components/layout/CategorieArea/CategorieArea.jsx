@@ -11,13 +11,14 @@ export default function CategorieArea() {
     "Music",
     "Water Play",
     "Active Play",
+    "Other",
   ];
 
   list.forEach((element, i) => {
     catalog.push(
       <div
         key={i}
-        className="overflow-hidden max-w-[255px] min-w-[240px] relative"
+        className="overflow-hidden max-w-[230px] min-w-[200px] w-full relative md:p-2"
       >
         <Image
           className="w-full rounded-[36px] overflow-hiddenW"
@@ -35,10 +36,12 @@ export default function CategorieArea() {
 
   return (
     <section className={`w-full`}>
-      <div className={`container w-auto text-center`}>
+      <div className={`w-full text-center`}>
         <h2 className={`title text-4xl sm:mb-4 md:mb-6`}>Categories</h2>
         <div className={`row`}>
-          <div className={`col-12 flex justify-between gap-2`}>
+          <div
+            className={`col-12 flex justify-center gap-x-2 gap-y-2 flex-wrap`}
+          >
             {catalog}
             {/* <div className="overflow-hidden max-w-[255px] relative">
               <Image
