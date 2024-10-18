@@ -1,7 +1,7 @@
 .product_item {
   @apply relative;
   @apply w-full;
-  @apply sm:w-[49%] lg:w-[30%] xl:w-[22.5%];
+  @apply sm:w-[47%] lg:w-[30%] xl:w-[22.5%];
   @apply min-h-[426px] lg:min-h-[426px];
   @apply m-0 sm:m-2 md:m-3;
   @apply flex justify-center;
