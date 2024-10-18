@@ -681,6 +681,10 @@ video {
   width: 100%;
 }
 
+.min-w-\[240px\] {
+  min-width: 240px;
+}
+
 .max-w-\[255px\] {
   max-width: 255px;
 }
@@ -723,6 +727,14 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .overflow-hidden {
@@ -851,6 +863,11 @@ video {
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .text-gray-900 {
