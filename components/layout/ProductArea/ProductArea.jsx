@@ -85,7 +85,7 @@ export default function ProductArea() {
         <h2 className={`title text-4xl sm:mb-4 md:mb-6`}>Recommended</h2>
         <div className={`row`}>
           <div className={`col-12 ${styles.item_list}`}>
-            {products.slice(0, 12).map((product, index) => (
+            {products.slice(0, 4).map((product, index) => (
               <ProductThumb key={index} product={product} />
             ))}
             {/* <div className={`${styles.product_item}`}>

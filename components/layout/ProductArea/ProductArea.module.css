@@ -8,10 +8,11 @@
   max-width: 375px;
   padding-top: 0;
   padding-bottom: 0;
+  @apply last:lg:hidden last:xl:flex;
 }
 
 .container {
-  @apply sm:w-full sm:max-w-none;
+  @apply sm:w-full sm:max-w-none lg:max-w-[1320px];
 }
 .product_content {
   @apply border border-gray-100 bg-white shadow-md;
