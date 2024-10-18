@@ -6,6 +6,7 @@ import Link from "next/link";
 import Date from "@/components/date";
 import HeroSection from "@/components/layout/HeroSection/HeroSection";
 import ProductArea from "@/components/layout/ProductArea/ProductArea";
+import CategorieArea from "@/components/layout/CategorieArea/CategorieArea";
 
 // import { inter } from "@/app/ui/fonts";
 // import TopNavBar from "@/components/TopNavbar/TopNavbar.js";
@@ -46,6 +47,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <HeroSection />
       <ProductArea />
+      <CategorieArea />
       <section className={`${utilStyles.headingMd} hidden`}>
         <p>
           Hello, I’m <strong>Virachai</strong>. I’m a software engineer and a
