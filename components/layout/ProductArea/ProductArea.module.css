@@ -11,7 +11,9 @@
   margin-bottom: 0;
   @apply last:lg:hidden last:xl:flex;
   background-color: #e4f6fe;
-  @apply first:bg-cyan-400 last:bg-rose-400;
+  @apply first:bg-cyan-200 [&:nth-child(2)]:bg-yellow-200;
+  @apply [&:nth-child(3)]:bg-green-200 [&:nth-child(4)]:bg-rose-200;
+  @apply hover:bg-teal-200;
 }
 
 .container {
