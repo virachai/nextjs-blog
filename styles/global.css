@@ -592,7 +592,7 @@ html,
 }
 
 body {
-  overflow-y: visible;
+  overflow-y: scroll;
   overflow-x: hidden;
   /* Show scrollbars */
   width: 100vw;
@@ -601,7 +601,6 @@ body {
 @media (min-width: 1024px) {
   body {
     width: 100%;
-    overflow-y: scroll;
   }
 }
 
