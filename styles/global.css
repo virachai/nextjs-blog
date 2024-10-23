@@ -598,10 +598,16 @@ body {
   width: 100vw;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   body {
-    width: 100%;
+    max-width: 100%;
   }
+}
+
+body {
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 * {
