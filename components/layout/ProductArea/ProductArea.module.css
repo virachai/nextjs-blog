@@ -1,47 +1,51 @@
-.product_item {
-  @apply relative;
-  @apply w-full;
-  @apply sm:w-[46%] lg:w-[30%] xl:w-[22.5%];
-  @apply min-h-[426px] lg:min-h-[426px];
-  @apply m-0 sm:m-2 md:m-3;
-  @apply flex justify-center;
-  max-width: 375px;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  @apply last:lg:hidden last:xl:flex;
-  background-color: #e4f6fe;
-  @apply first:bg-cyan-200 [&:nth-child(2)]:bg-yellow-200;
-  @apply [&:nth-child(3)]:bg-green-200 [&:nth-child(4)]:bg-rose-200;
-  @apply hover:bg-fuchsia-300;
-}
+@tailwind components;
 
-.container {
-  @apply sm:w-full sm:max-w-none lg:max-w-[1320px];
-}
-.product_content {
-  @apply border border-gray-100 shadow-md;
-  @apply w-[100%];
-}
+@layer components {
+  .product_item {
+    @apply relative;
+    @apply w-full;
+    @apply sm:w-[46%] lg:w-[30%] xl:w-[22.5%];
+    @apply min-h-[426px] lg:min-h-[426px];
+    @apply m-0 sm:m-2 md:m-3;
+    @apply flex justify-center;
+    max-width: 375px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    @apply last:lg:hidden last:xl:flex;
+    background-color: #e4f6fe;
+    @apply first:bg-cyan-200 [&:nth-child(2)]:bg-yellow-200;
+    @apply [&:nth-child(3)]:bg-green-200 [&:nth-child(4)]:bg-rose-200;
+    @apply hover:bg-fuchsia-300;
+  }
 
-.item_list {
-  @apply flex justify-center flex-wrap gap-y-8;
-  @apply sm:p-0;
-}
+  .container {
+    @apply sm:w-full sm:max-w-none lg:max-w-[1320px];
+  }
+  .product_content {
+    @apply border border-gray-100 shadow-md;
+    @apply w-[100%];
+  }
 
-.product_thumb {
-  min-height: 280px;
-  max-height: 280px;
-  @apply flex justify-center items-center w-full;
-}
+  .item_list {
+    @apply flex justify-center flex-wrap gap-y-8;
+    @apply sm:p-0;
+  }
 
-.thumb {
-  max-height: unset;
-}
+  .product_thumb {
+    min-height: 280px;
+    max-height: 280px;
+    @apply flex justify-center items-center w-full;
+  }
 
-.product_info {
-  @apply text-left;
-  border-radius: 0 0 5px 5px;
-  min-height: 117px;
-  padding: 0 31px 33px;
+  .thumb {
+    max-height: unset;
+  }
+
+  .product_info {
+    @apply text-left;
+    border-radius: 0 0 5px 5px;
+    min-height: 117px;
+    padding: 0 31px 33px;
+  }
 }

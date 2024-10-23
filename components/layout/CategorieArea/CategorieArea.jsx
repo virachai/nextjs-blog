@@ -16,12 +16,9 @@ export default function CategorieArea() {
 
   list.forEach((element, i) => {
     catalog.push(
-      <div
-        key={i}
-        className="overflow-hidden max-w-[230px] min-w-[200px] w-full relative md:p-2"
-      >
+      <div key={i} className={`${styles.itemcard}`}>
         <Image
-          className="w-full rounded-[36px] overflow-hiddenW"
+          className=""
           src="/images/300x300.avif"
           alt="Pretend Play"
           width={300}
@@ -35,7 +32,7 @@ export default function CategorieArea() {
   });
 
   return (
-    <section className={`w-full`}>
+    <section className={`w-full mb-16`}>
       <div className={`w-full text-center`}>
         <h2 className={`title text-4xl sm:mb-4 md:mb-6`}>Categories</h2>
         <div className={`row`}>
@@ -43,18 +40,6 @@ export default function CategorieArea() {
             className={`col-12 flex justify-center gap-x-2 gap-y-2 flex-wrap`}
           >
             {catalog}
-            {/* <div className="overflow-hidden max-w-[255px] relative">
-              <Image
-                className="w-full rounded-[36px] overflow-hiddenW"
-                src="/images/300x300.avif"
-                alt="Pretend Play"
-                width={300}
-                height={300}
-              />
-              <div className="py-2">
-                <div className="text-base text-gray-900">Pretend Play</div>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

@@ -2,55 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-#navbarIconMenu .material-symbols-outlined {
-  @apply text-3xl;
-  @apply grayscale;
-}
-#navbarIconMenu > a {
-  @apply flex;
-  @apply min-h-[45px];
-  @apply max-h-[45px];
-  @apply min-w-[75px];
-  @apply max-w-[75px];
-  @apply justify-center;
-  @apply items-center;
-  @apply no-underline;
-  @apply hover:no-underline;
-}
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.6;
-  font-size: 18px;
-}
+@layer base {
+  #navbarIconMenu .material-symbols-outlined {
+    @apply text-3xl;
+    @apply grayscale;
+  }
 
-body {
-  overflow-y: scroll; /* Show scrollbars */
-  overflow-x: hidden; /* Show scrollbars */
-  min-width: 370px;
-}
+  main {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #navbarIconMenu > a {
+    @apply flex;
+    @apply min-h-[45px];
+    @apply max-h-[45px];
+    @apply min-w-[75px];
+    @apply max-w-[75px];
+    @apply justify-center;
+    @apply items-center;
+    @apply no-underline;
+    @apply hover:no-underline;
+  }
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+  }
 
-* {
-  box-sizing: border-box;
-}
+  body {
+    overflow-y: scroll; /* Show scrollbars */
+    overflow-x: hidden; /* Show scrollbars */
+    min-width: 370px;
+  }
 
-a {
-  color: #0070f3;
-  text-decoration: none;
-}
+  * {
+    box-sizing: border-box;
+  }
 
-a:hover {
-  text-decoration: underline;
-}
+  a {
+    color: #0070f3;
+    text-decoration: none;
+  }
 
-img {
-  max-width: 100%;
-  display: block;
-}
+  a:hover {
+    text-decoration: underline;
+  }
 
-input.navbar-toggler:checked + #navbarNav {
-  display: flex;
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  input.navbar-toggler:checked + #navbarNav {
+    display: flex;
+  }
 }

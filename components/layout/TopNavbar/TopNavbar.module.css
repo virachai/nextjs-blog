@@ -1,54 +1,57 @@
-/* TopNavbar.module.css */
-.navs {
-  position: fixed;
-  padding: 0.7rem;
-  min-width: 370px;
-  /* width: 100%; */
-  @apply w-full;
-  @apply max-h-[71px];
-  @apply min-h-[71px];
-  @apply z-10;
-  @apply items-center;
-  @apply justify-end;
-  @apply flex-wrap;
-  @apply bg-white border-b border-gray-200;
-  @apply md:px-4;
-}
+@tailwind components;
 
-.nav_logo {
-  position: absolute;
-  left: 0;
-  padding-left: 0.7rem;
-  @apply flex-none m-0;
-  @apply md:pl-4;
-}
+@layer components {
+  .navs {
+    position: fixed;
+    padding: 0.7rem;
+    min-width: 370px;
+    /* width: 100%; */
+    @apply w-full;
+    @apply max-h-[71px];
+    @apply min-h-[71px];
+    @apply z-10;
+    @apply items-center;
+    @apply justify-end;
+    @apply flex-wrap;
+    @apply bg-white border-b border-gray-200;
+    @apply md:px-4;
+  }
 
-.nav_mobile,
-.nav_lg {
-  padding: 0;
-  margin: 0;
-}
-.nav_mobile {
-  @apply ml-3;
-}
-.nav_menu {
-  display: unset;
-}
-.nav_checkbox {
-  display: flex;
-  position: absolute;
-  top: 0.75rem;
-  opacity: 0;
-  @apply z-20;
-  @apply h-[44px];
-  @apply w-[62px];
-}
+  .nav_logo {
+    position: absolute;
+    left: 0;
+    padding-left: 0.7rem;
+    @apply flex-none m-0;
+    @apply md:pl-4;
+  }
 
-.nav_mobile_list {
-  padding: 0;
-  margin: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  .nav_mobile,
+  .nav_lg {
+    padding: 0;
+    margin: 0;
+  }
+  .nav_mobile {
+    @apply ml-3;
+  }
+  .nav_menu {
+    display: unset;
+  }
+  .nav_checkbox {
+    display: flex;
+    position: absolute;
+    top: 0.75rem;
+    opacity: 0;
+    @apply z-20;
+    @apply h-[44px];
+    @apply w-[62px];
+  }
+
+  .nav_mobile_list {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 }

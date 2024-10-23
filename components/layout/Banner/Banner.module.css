@@ -1,0 +1,7 @@
+@tailwind components;
+
+@layer components {
+  .itemcard {
+    @apply overflow-hidden max-w-[230px] min-w-[200px] w-full relative md:p-2;
+  }
+}

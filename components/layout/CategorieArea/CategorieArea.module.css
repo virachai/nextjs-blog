@@ -1,0 +1,11 @@
+@tailwind components;
+
+@layer components {
+  .itemcard {
+    @apply max-w-sm w-full;
+    @apply overflow-hidden sm:max-w-[230px] min-w-[200px] relative md:p-2;
+  }
+  .itemcard img {
+    @apply w-full rounded-[24px] overflow-hidden;
+  }
+}
