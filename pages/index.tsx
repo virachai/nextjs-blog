@@ -9,6 +9,7 @@ import ProductArea from '@/components/layout/ProductArea/ProductArea';
 import CategorieArea from '@/components/layout/CategorieArea/CategorieArea';
 import { GetStaticProps } from 'next'; // Import GetStaticProps type
 
+// https://nextjs.org/telemetry
 type Post = {
   id: string;
   date: string;

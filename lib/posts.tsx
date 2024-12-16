@@ -11,7 +11,8 @@ interface PostData {
   id: string;
   title: string;
   date: string;
-  [key: string]: any; // For any other custom metadata (e.g., author, tags)
+  [key: string]: string | number | string[] | undefined; // More specific types instead of `any`
+  // [key: string]: any; // For any other custom metadata (e.g., author, tags)
 }
 
 // Define the return type of the getSortedPostsData function
