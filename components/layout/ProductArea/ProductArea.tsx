@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import Image from 'next/image';
+// import Link from 'next/link';
+// import Image from 'next/image';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './ProductArea.module.css';
 import ProductThumb from './ProductThumb';
@@ -80,10 +80,10 @@ export default function ProductArea() {
     }
   ];
   return (
-    <section className={`w-full mb-16`}>
+    <section className={'w-full mb-16'}>
       <div className={`container w-auto text-center ${styles.container}`}>
-        <h2 className={`title text-4xl sm:mb-4 md:mb-6`}>Recommended</h2>
-        <div className={`row`}>
+        <h2 className={'title text-4xl sm:mb-4 md:mb-6'}>Recommended</h2>
+        <div className={'row'}>
           <div className={`col-12 ${styles.item_list}`}>
             {products.slice(0, 4).map((product, index) => (
               <ProductThumb key={index} product={product} />

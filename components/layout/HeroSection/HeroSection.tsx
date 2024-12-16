@@ -1,14 +1,16 @@
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import utilStyles from '@/styles/utils.module.css';
+// import utilStyles from '@/styles/utils.module.css';
 import styles from './HeroSection.module.css';
 
 export default function HeroSection() {
   return (
-    <section className={`w-full mb-16`}>
+    <section className={'w-full mb-16'}>
       <div
-        className={`relative overflow-y-hidden max-h-[500px] md:max-h-[620px] lg:max-h-[737px]`}
+        className={
+          'relative overflow-y-hidden max-h-[500px] md:max-h-[620px] lg:max-h-[737px]'
+        }
       >
         <div
           className={`${styles.home_slider_item}`}

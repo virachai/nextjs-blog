@@ -1,4 +1,4 @@
-import Link from 'next/link';
+// import Link from 'next/link';
 import Image from 'next/image';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './CategorieArea.module.css';
@@ -32,12 +32,12 @@ export default function CategorieArea() {
   });
 
   return (
-    <section className={`w-full mb-16`}>
-      <div className={`w-full text-center`}>
-        <h2 className={`title text-4xl sm:mb-4 md:mb-6`}>Categories</h2>
-        <div className={`row`}>
+    <section className={'w-full mb-16'}>
+      <div className={'w-full text-center'}>
+        <h2 className={'title text-4xl sm:mb-4 md:mb-6'}>Categories</h2>
+        <div className={'row'}>
           <div
-            className={`col-12 flex justify-center gap-x-2 gap-y-2 flex-wrap`}
+            className={'col-12 flex justify-center gap-x-2 gap-y-2 flex-wrap'}
           >
             {catalog}
           </div>

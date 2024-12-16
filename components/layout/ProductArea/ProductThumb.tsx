@@ -17,7 +17,7 @@ export default function ProductArea({ product }) {
               alt="Product Image"
               width={164}
               height={198}
-              className={``}
+              className={''}
             />
           </div>
         </div>
