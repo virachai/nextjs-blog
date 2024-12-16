@@ -1,10 +1,10 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Footer() {
   return (
     <div className="w-full px-6 py-2 md:flex md:items-center md:justify-between">
       <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-        © 2024{" "}
+        © 2024{' '}
         <a href="https://fb.com/virachai.wongsena" className="hover:underline">
           Ch.AI
         </a>

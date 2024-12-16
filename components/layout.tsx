@@ -1,16 +1,22 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "./layout.module.css";
-import utilStyles from "@/styles/utils.module.css";
-import Link from "next/link";
-import { inter } from "@/app/ui/fonts";
-import TopNavBar from "@/components/layout/TopNavbar/TopNavbar";
-import Footer from "@/components/layout/Footer/Footer";
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from './layout.module.css';
+import utilStyles from '@/styles/utils.module.css';
+import Link from 'next/link';
+import {inter} from '@/app/ui/fonts';
+import TopNavBar from '@/components/layout/TopNavbar/TopNavbar';
+import Footer from '@/components/layout/Footer/Footer';
 
-const name = "Toy Plus Plus";
-export const siteTitle = "Toy Plus Plus Website";
+const name = 'Toy Plus Plus';
+export const siteTitle = 'Toy Plus Plus Website';
 
-export default function Layout({ children, home }) {
+// Define the types for the props
+interface LayoutProps {
+  children: React.ReactNode;
+  home: boolean;
+}
+
+export default function Layout({children, home}: LayoutProps) {
   return (
     <div className={`${styles.container} ${inter.className} antialiased`}>
       <Head>
@@ -22,7 +28,7 @@ export default function Layout({ children, home }) {
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
+            siteTitle,
           )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
         />
         <meta name="og:title" content={siteTitle} />

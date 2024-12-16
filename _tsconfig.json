@@ -1,5 +1,4 @@
 {
-  "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -14,26 +13,22 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./*"]
-    },
-    "rootDir": ".",
-    "outDir": "build",
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "app/ui/fonts.ts",
-    "src/**/*.ts",
-    "test/**/*.ts"
+    "app/ui/fonts.js"
   ],
   "exclude": ["node_modules"]
 }
