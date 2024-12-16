@@ -13,10 +13,11 @@ export const siteTitle = 'Toy Plus Plus Website';
 // Define the types for the props
 interface LayoutProps {
   children: React.ReactNode;
-  home: boolean;
+  home?: boolean; // Make `home` prop optional
 }
 
-export default function Layout({ children, home }: LayoutProps) {
+export default function Layout({ children, home = false }: LayoutProps) {
+  // Default value for `home` is `false`
   return (
     <div className={`${styles.container} ${inter.className} antialiased`}>
       <Head>
@@ -66,7 +67,7 @@ export default function Layout({ children, home }: LayoutProps) {
       {/* {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
-            ← Back to <span class="material-symbols-outlined">home</span>
+            ← Back to <span className="material-symbols-outlined">home</span>
           </Link>
         </div>
       )} */}

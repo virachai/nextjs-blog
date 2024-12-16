@@ -1,30 +1,51 @@
 import Layout from '../../components/layout';
+// import { GetStaticProps, GetStaticPaths, GetStaticPropsContext } from 'next';
+import { GetStaticProps, GetStaticPaths } from 'next';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import utilStyles from '../../styles/utils.module.css';
 import Head from 'next/head';
 import Date from '../../components/date';
 
-export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id);
-  return {
-    props: {
-      postData
-    }
-  };
+// Define the types for the props
+interface PostData {
+  id: string;
+  title: string;
+  date: string;
+  contentHtml: string;
 }
 
-export async function getStaticPaths() {
+interface PostProps {
+  postData: PostData;
+}
+
+// `getStaticProps` function with types
+export const getStaticProps: GetStaticProps<PostProps> = async ({ params }) => {
+  if (params?.id) {
+    const postData = await getPostData(params.id as string); // Type-cast params.id
+    return {
+      props: {
+        postData
+      }
+    };
+  }
+
+  return {
+    notFound: true
+  };
+};
+
+// `getStaticPaths` function with types
+export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllPostIds();
   return {
     paths,
     fallback: false
   };
-}
+};
 
-export default function Post({ postData }) {
+const Post: React.FC<PostProps> = ({ postData }) => {
   return (
     <Layout>
-      {/* Add this <Head> tag */}
       <Head>
         <title>{postData.title}</title>
       </Head>
@@ -37,6 +58,7 @@ export default function Post({ postData }) {
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
 
+      {/* Optional display of post info */}
       <Date dateString={postData.date} />
       <br />
       {postData.title}
@@ -46,4 +68,6 @@ export default function Post({ postData }) {
       {postData.date}
     </Layout>
   );
-}
+};
+
+export default Post;

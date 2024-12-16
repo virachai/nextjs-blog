@@ -3,7 +3,8 @@ import Head from 'next/head';
 import Script from 'next/script';
 import Layout from '../../components/layout';
 import Image from 'next/image';
-import { inter } from '/app/ui/fonts';
+import { inter } from '@/app/ui/fonts';
+
 // if (inter) {
 // }
 

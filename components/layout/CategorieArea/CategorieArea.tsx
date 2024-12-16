@@ -1,10 +1,12 @@
 // import Link from 'next/link';
 import Image from 'next/image';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './CategorieArea.module.css';
 
 export default function CategorieArea() {
-  const catalog = [];
+  // const catalog = [];
+  // Explicitly define catalog type as an array of JSX elements
+  const catalog: JSX.Element[] = [];
+
   const list = [
     'Pretend Play',
     'Learning & Education',
