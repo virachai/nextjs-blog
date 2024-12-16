@@ -5,7 +5,7 @@ const longString =
 
 const trailing = 'Semicolon';
 
-const why = {am: 'I tabbed?'};
+const why = { am: 'I tabbed?' };
 
 const iWish = "I didn't have a trailing space...";
 
@@ -18,7 +18,7 @@ const re = /foo {3}bar/;
 export function doSomeStuff(
   withThis: string,
   andThat: string,
-  andThose: string[],
+  andThose: string[]
 ) {
   //function on one line
   if (!andThose.length) {

@@ -1,8 +1,8 @@
-import Link from "next/link";
-import Image from "next/image";
-import "bootstrap/dist/css/bootstrap.min.css";
-import utilStyles from "@/styles/utils.module.css";
-import styles from "./HeroSection.module.css";
+import Link from 'next/link';
+import Image from 'next/image';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import utilStyles from '@/styles/utils.module.css';
+import styles from './HeroSection.module.css';
 
 export default function HeroSection() {
   return (

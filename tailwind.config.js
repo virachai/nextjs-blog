@@ -6,7 +6,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
 
     // Or if using `src` directory:
-    './src/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
     extend: {},
@@ -16,9 +16,9 @@ module.exports = {
         sm: '576px',
         md: '768px',
         lg: '992px',
-        xl: '1200px',
-      },
-    },
+        xl: '1200px'
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 };

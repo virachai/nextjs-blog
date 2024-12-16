@@ -1,17 +1,17 @@
-import Link from "next/link";
-import Image from "next/image";
-import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "./CategorieArea.module.css";
+import Link from 'next/link';
+import Image from 'next/image';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from './CategorieArea.module.css';
 
 export default function CategorieArea() {
   const catalog = [];
   const list = [
-    "Pretend Play",
-    "Learning & Education",
-    "Music",
-    "Water Play",
-    "Active Play",
-    "Others",
+    'Pretend Play',
+    'Learning & Education',
+    'Music',
+    'Water Play',
+    'Active Play',
+    'Others'
   ];
 
   list.forEach((element, i) => {

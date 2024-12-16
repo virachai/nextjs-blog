@@ -1,83 +1,83 @@
-import Link from "next/link";
-import Image from "next/image";
-import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "./ProductArea.module.css";
-import ProductThumb from "./ProductThumb";
+import Link from 'next/link';
+import Image from 'next/image';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from './ProductArea.module.css';
+import ProductThumb from './ProductThumb';
 
 export default function ProductArea() {
   const products = [
     {
-      imageUrl: "/images/9.webp",
-      title: "Funskool Teddy Brown",
+      imageUrl: '/images/9.webp',
+      title: 'Funskool Teddy Brown',
       price: 199.99,
-      rating: 3.4,
+      rating: 3.4
     },
     {
-      imageUrl: "/images/9.webp",
-      title: "Product 2",
+      imageUrl: '/images/9.webp',
+      title: 'Product 2',
       price: 299.99,
-      rating: 4.2,
+      rating: 4.2
     },
     {
-      imageUrl: "/images/9.webp",
-      title: "Product 3",
+      imageUrl: '/images/9.webp',
+      title: 'Product 3',
       price: 349.99,
-      rating: 4.8,
+      rating: 4.8
     },
     {
-      imageUrl: "/images/9.webp",
-      title: "Product 4",
+      imageUrl: '/images/9.webp',
+      title: 'Product 4',
       price: 179.99,
-      rating: 4.7,
+      rating: 4.7
     },
     {
-      imageUrl: "/images/9.webp",
-      title: "Product 5",
+      imageUrl: '/images/9.webp',
+      title: 'Product 5',
       price: 229.99,
-      rating: 4.3,
+      rating: 4.3
     },
     {
-      imageUrl: "/images/9.webp",
-      title: "Product 6",
+      imageUrl: '/images/9.webp',
+      title: 'Product 6',
       price: 159.99,
-      rating: 4.6,
+      rating: 4.6
     },
     {
-      imageUrl: "/images/9.webp",
-      title: "Product 7",
+      imageUrl: '/images/9.webp',
+      title: 'Product 7',
       price: 249.99,
-      rating: 4.1,
+      rating: 4.1
     },
     {
-      imageUrl: "/images/9.webp",
-      title: "Product 8",
+      imageUrl: '/images/9.webp',
+      title: 'Product 8',
       price: 189.99,
-      rating: 4.9,
+      rating: 4.9
     },
     {
-      imageUrl: "/images/9.webp",
-      title: "Product 9",
+      imageUrl: '/images/9.webp',
+      title: 'Product 9',
       price: 219.99,
-      rating: 4.4,
+      rating: 4.4
     },
     {
-      imageUrl: "/images/9.webp",
-      title: "Product 10",
+      imageUrl: '/images/9.webp',
+      title: 'Product 10',
       price: 169.99,
-      rating: 4.5,
+      rating: 4.5
     },
     {
-      imageUrl: "/images/9.webp",
-      title: "Product 11",
+      imageUrl: '/images/9.webp',
+      title: 'Product 11',
       price: 239.99,
-      rating: 4.2,
+      rating: 4.2
     },
     {
-      imageUrl: "/images/9.webp",
-      title: "Product 12",
+      imageUrl: '/images/9.webp',
+      title: 'Product 12',
       price: 179.99,
-      rating: 4.8,
-    },
+      rating: 4.8
+    }
   ];
   return (
     <section className={`w-full mb-16`}>

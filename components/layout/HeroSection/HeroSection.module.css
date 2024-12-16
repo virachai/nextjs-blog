@@ -8,7 +8,7 @@
     background-size: cover;
     height: 100%;
     width: 100%;
-    background-image: url("https://template.hasthemes.com/kidol/kidol/assets/img/slider/3.jpg");
+    background-image: url('https://template.hasthemes.com/kidol/kidol/assets/img/slider/3.jpg');
     @apply min-h-[500px] md:min-h-[620px] lg:min-h-[737px];
     @apply max-h-[500px] md:max-h-[620px] lg:max-h-[737px];
     @apply bg-right md:bg-center;

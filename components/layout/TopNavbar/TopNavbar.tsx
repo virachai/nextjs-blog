@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import {useEffect} from 'react';
+import { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import utilStyles from '@/styles/utils.module.css';
+// import utilStyles from '@/styles/utils.module.css';
 import styles from './TopNavbar.module.css';
 
 export default function TopNavbar() {
@@ -86,7 +86,7 @@ export default function TopNavbar() {
       <div className={`${styles.nav_mobile} navbar-toggler flex-none`}>
         <button
           className={'navbar-toggler z-10'}
-          type="checkbox"
+          type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
           aria-controls="navbarNav"

@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import styles from "./ProductArea.module.css";
-import ItemRating from "./ItemRating";
+import Image from 'next/image';
+import Link from 'next/link';
+import styles from './ProductArea.module.css';
+import ItemRating from './ItemRating';
 
 export default function ProductArea({ product }) {
   // Product data should be passed as props
@@ -22,7 +22,7 @@ export default function ProductArea({ product }) {
           </div>
         </div>
         <div className={`${styles.product_info}`}>
-          <ItemRating rating={rating} />{" "}
+          <ItemRating rating={rating} />{' '}
           <h4 className="title text-base">
             <Link
               href="#"
