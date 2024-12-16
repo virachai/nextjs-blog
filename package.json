@@ -5,7 +5,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "tailwindcss -i ./src/tailwindcss.css -o ./styles/global.css --watch | next dev",
     "build": "next build",
     "start": "next start",
     "lint": "gts lint",
@@ -32,6 +32,7 @@
     "remark-html": "^15.0.1"
   },
   "devDependencies": {
+    "@types/next": "^8.0.7",
     "@types/node": "^22.7.5",
     "@types/react": "18.3.11",
     "autoprefixer": "^10.4.20",
@@ -47,6 +48,9 @@
     "paths": {
       "@/*": [
         "./*"
+      ],
+      "@styles/*": [
+        "./styles/*"
       ]
     }
   }

@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-// import utilStyles from '@/styles/utils.module.css';
 import styles from './TopNavbar.module.css';
 
 export default function TopNavbar() {
@@ -11,8 +9,13 @@ export default function TopNavbar() {
   }, []);
 
   return (
-    <nav className={`${styles.navs} navbar navbar-expand-md`}>
-      <Link className={`${styles.nav_logo} navbar-brand`} href="/" tabIndex={1}>
+    <nav className="flex items-center justify-between p-2 bg-white w-full">
+      {/* Logo */}
+      <Link
+        className={`${styles.nav_logo} flex items-center w-[120px]`}
+        href="/"
+        tabIndex={1}
+      >
         <Image
           src="/images/Dino-logo.png"
           height={41}
@@ -21,46 +24,66 @@ export default function TopNavbar() {
         />
       </Link>
 
-      <div className={`${styles.nav_lg} hidden md:flex flex-auto justify-end`}>
-        <div className={`${styles.nav_menu}`} id="navbarMenu">
-          <ul className="navbar-nav">
-            <li className="nav-item active">
-              <Link className="nav-link" href="/" tabIndex={3}>
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" href="/about" tabIndex={4}>
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" href="/toy" tabIndex={5}>
-                Toy
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" href="/age" tabIndex={6}>
-                Age
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" href="/Contact" tabIndex={7}>
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
+      {/* Desktop Navbar Menu */}
+      <div className="hidden md:flex flex-grow justify-end">
+        <ul className="flex space-x-6">
+          <li>
+            <Link
+              className="text-gray-600 hover:text-blue-500"
+              href="/"
+              tabIndex={3}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="text-gray-600 hover:text-blue-500"
+              href="/about"
+              tabIndex={4}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="text-gray-600 hover:text-blue-500"
+              href="/toy"
+              tabIndex={5}
+            >
+              Toy
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="text-gray-600 hover:text-blue-500"
+              href="/age"
+              tabIndex={6}
+            >
+              Age
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="text-gray-600 hover:text-blue-500"
+              href="/contact"
+              tabIndex={7}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
       </div>
 
-      <div className="hidden lg:block md:px-3 lg:px-6 w-1/4">
+      {/* Search Bar */}
+      <div className="hidden lg:flex items-center space-x-4 w-min-[200px]">
         <div className="relative">
-          <button className="transition-colors duration-100 ease-in-out text-gray-600 py-2 pr-4 pl-10 block w-full appearance-none leading-normal border border-transparent rounded-lg text-left select-none truncate bg-gray-200">
+          <button className="text-gray-600 py-2 px-4 rounded-lg bg-gray-200 hover:bg-gray-300 focus:outline-none transition duration-150 ease-in-out">
             Search
           </button>
-          <div className="pointer-events-none absolute inset-y-0 left-0 pl-4 flex items-center">
+          <div className="absolute left-2 inset-y-0 flex items-center">
             <svg
-              className="fill-current pointer-events-none text-gray-600 w-4 h-4"
+              className="text-gray-600 w-4 h-4"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -70,22 +93,26 @@ export default function TopNavbar() {
         </div>
       </div>
 
-      <div id="navbarIconMenu" className="flex flex-row justify-end">
-        <Link className="" href="#">
-          <span className="material-symbols-outlined">shopping_cart</span>
+      {/* Icon Menu (Cart and Login) */}
+      <div className="flex items-center space-x-4">
+        <Link href="#">
+          <span className="material-symbols-outlined text-gray-600 hover:text-blue-500">
+            shopping_cart
+          </span>
         </Link>
         <Link
           target="_blank"
           href="https://toyplusplus.vercel.app/"
-          className="leading-none border rounded border-blue-500 bg-blue-500 hover:bg-blue-700 text-white"
+          className="py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white rounded-lg border border-blue-500"
         >
           <span>Login</span>
         </Link>
       </div>
 
-      <div className={`${styles.nav_mobile} navbar-toggler flex-none`}>
+      {/* Mobile Navbar Menu */}
+      <div className="md:hidden">
         <button
-          className={'navbar-toggler z-10'}
+          className="flex items-center justify-center text-gray-600 focus:outline-none"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -96,37 +123,52 @@ export default function TopNavbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <input
-          type="checkbox"
-          className={`${styles.nav_checkbox} navbar-toggler`}
-        />
-        <div
-          className={`${styles.nav_mobile_list} collapse navbar-collapse`}
-          id="navbarNav"
-        >
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link className="nav-link active" href="/" tabIndex={3}>
+
+        {/* Mobile Menu */}
+        <div id="navbarNav" className="collapse navbar-collapse">
+          <ul className="flex flex-col space-y-4 mt-4">
+            <li>
+              <Link
+                className="text-gray-600 hover:text-blue-500"
+                href="/"
+                tabIndex={3}
+              >
                 Home
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" href="/about" tabIndex={4}>
+            <li>
+              <Link
+                className="text-gray-600 hover:text-blue-500"
+                href="/about"
+                tabIndex={4}
+              >
                 About
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" href="/toy" tabIndex={5}>
+            <li>
+              <Link
+                className="text-gray-600 hover:text-blue-500"
+                href="/toy"
+                tabIndex={5}
+              >
                 Toy
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" href="/age" tabIndex={6}>
+            <li>
+              <Link
+                className="text-gray-600 hover:text-blue-500"
+                href="/age"
+                tabIndex={6}
+              >
                 Age
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" href="/Contact" tabIndex={7}>
+            <li>
+              <Link
+                className="text-gray-600 hover:text-blue-500"
+                href="/contact"
+                tabIndex={7}
+              >
                 Contact
               </Link>
             </li>

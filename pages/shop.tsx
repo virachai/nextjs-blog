@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '@/components/layout';
-import utilStyles from '@/styles/utils.module.css';
+import utilStyles from '@/src/css/utils.module.css';
 import { getSortedPostsData } from '@/lib/posts';
 import Link from 'next/link';
 import Date from '@/components/date';
@@ -35,7 +35,17 @@ import Date from '@/components/date';
 
 // export default MyApp;
 
-export default function Home({ allPostsData }) {
+type Post = {
+  id: string;
+  date: string;
+  title: string;
+};
+
+type HomeProps = {
+  allPostsData: Post[];
+};
+
+export default function Home({ allPostsData }: HomeProps) {
   return (
     <Layout home>
       <Head>

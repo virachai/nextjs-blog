@@ -1,22 +1,24 @@
 @tailwind components;
 
 @layer components {
+  /* Navbar container */
   .navs {
     position: fixed;
     padding: 0.7rem;
-    min-width: 370px;
-    /* width: 100%; */
+    min-width: 370px; /* Ensures the navbar has a minimum width */
     @apply w-full;
     @apply max-h-[71px];
     @apply min-h-[71px];
     @apply z-10;
     @apply items-center;
-    @apply justify-end;
-    @apply flex-wrap;
-    @apply bg-white border-b border-gray-200;
-    @apply md:px-4;
+    @apply justify-between; /* Ensure logo is on the left and menu on the right */
+    @apply bg-white;
+    @apply border-b;
+    @apply border-gray-200;
+    @apply md:px-4; /* Adds padding on larger screens */
   }
 
+  /* Logo positioning */
   .nav_logo {
     position: absolute;
     left: 0;
@@ -25,17 +27,24 @@
     @apply md:pl-4;
   }
 
+  /* Mobile and Large Screen Menu - common styles */
   .nav_mobile,
   .nav_lg {
     padding: 0;
     margin: 0;
   }
+
+  /* Mobile Navbar Styles */
   .nav_mobile {
     @apply ml-3;
   }
+
+  /* Menu list for desktop */
   .nav_menu {
     display: unset;
   }
+
+  /* Hidden checkbox for mobile navigation */
   .nav_checkbox {
     display: flex;
     position: absolute;
@@ -46,6 +55,7 @@
     @apply w-[62px];
   }
 
+  /* Mobile menu positioning */
   .nav_mobile_list {
     padding: 0;
     margin: 0;
@@ -53,5 +63,62 @@
     top: 0;
     left: 0;
     right: 0;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.95
+    ); /* Add slight transparency for mobile */
+    z-index: 50; /* Ensure it's above other elements */
+  }
+
+  /* Menu link styles */
+  .nav_item {
+    @apply text-gray-600;
+    @apply hover:text-blue-500;
+    @apply text-lg;
+    @apply py-2;
+    @apply px-4;
+    @apply block;
+  }
+
+  /* Active state for menu items */
+  .nav_item_active {
+    @apply text-blue-500;
+  }
+
+  /* Custom search button style */
+  .search_button {
+    @apply text-gray-600;
+    @apply py-2;
+    @apply px-4;
+    @apply rounded-lg;
+    @apply bg-gray-200;
+    @apply hover:bg-gray-300;
+    @apply focus:outline-none;
+    @apply transition-all;
+  }
+
+  /* Mobile Toggle Button */
+  .navbar-toggler {
+    @apply block;
+    @apply text-gray-600;
+    @apply focus:outline-none;
+  }
+
+  /* Custom navbar menu toggle icon */
+  .navbar-toggler-icon {
+    @apply block;
+    @apply w-6;
+    @apply h-6;
+    @apply bg-gray-600;
+    @apply rounded-sm;
+  }
+
+  /* Container for icons (cart and login) */
+  .navbarIconMenu {
+    @apply flex;
+    @apply items-center;
+    @apply space-x-4;
   }
 }

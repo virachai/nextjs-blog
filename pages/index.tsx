@@ -39,12 +39,24 @@ import CategorieArea from '@/components/layout/CategorieArea/CategorieArea';
 
 // export default MyApp;
 
-export default function Home({ allPostsData }) {
+type Post = {
+  id: string;
+  date: string;
+  title: string;
+};
+
+type HomeProps = {
+  allPostsData: Post[];
+};
+
+export default function Home({ allPostsData }: HomeProps) {
   return (
     <Layout home>
-      <Head>
-        <title>{siteTitle} - Home</title>
-      </Head>
+      {!siteTitle && (
+        <Head>
+          <title>{siteTitle} - Home</title>
+        </Head>
+      )}
       <HeroSection />
       <ProductArea />
       <CategorieArea />
